@@ -86,7 +86,7 @@ package com.adobe.nativeExtensions.maps
 	}
 }
 }}}
-
+----
 ===LatLng===
 {{{
 package com.adobe.nativeExtensions.maps

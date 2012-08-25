@@ -75,4 +75,4 @@ map.dispose();
 }}}
 
 Listen for MapMouseEvent.MARKER_SELECT, DESELECT on map object for touch events
-<br>Listen for MapEvent.* on map object for other map loading events
+<br>Listen for MapEvent class events on map object for other map loading events

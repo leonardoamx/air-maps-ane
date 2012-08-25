@@ -44,4 +44,35 @@ v[3]=new LatLng(36.99892, -109.045267);
 v[4]=new LatLng(38.00, -115.00);
 var p1:Polyline=new Polyline(v);
 map.addOverlay(p1);
+//map.removeOverlay(p1);//to remove the overlay (in this case polyline)
 }}}
+
+To capture the map view in bitmap data (bd)
+{{{
+map.drawViewPortToBitmapData(bd);
+}}}
+
+To create a pin, set title, subtitle for default Info window, and change its visual appearance
+{{{
+var m:Marker = new Marker(new LatLng(41.000512, -109.050116));
+m.title="Hello World";
+m.subtitle="A hello world sample message";
+m.fillColor=MarkerStyles.MARKER_COLOR_PURPLE;
+map.addOverlay(m);
+}}}
+
+To show/hide a default info window on click of a mouse event on pins
+{{{
+var m:Marker = new Marker(new LatLng(41.000512, -109.050116));
+m.title="Hello World";
+m.openInfoWindow();
+//m.closeInfoWindow();//to close the Info Window
+}}}
+
+once you are sure that you are no longer using the map use dispose() function
+{{{
+map.dispose();
+}}}
+
+Listen for MapMouseEvent.MARKER_SELECT, DESELECT on map object for touch events
+Listen for MapEvent.* on map object for other map loading events

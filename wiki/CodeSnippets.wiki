@@ -69,10 +69,10 @@ m.openInfoWindow();
 //m.closeInfoWindow();//to close the Info Window
 }}}
 
-once you are sure that you are no longer using the map use dispose() function
+Once you are sure that you are no longer using the map use dispose() function
 {{{
 map.dispose();
 }}}
 
 Listen for MapMouseEvent.MARKER_SELECT, DESELECT on map object for touch events
-Listen for MapEvent.* on map object for other map loading events
+<br>Listen for MapEvent.* on map object for other map loading events
